@@ -27,6 +27,7 @@ services:
       - .:/enju
     depends_on:
       - db
+      - redis
   redis:
     image: redis:5-alpine
     volumes:
