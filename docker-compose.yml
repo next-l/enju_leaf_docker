@@ -1,0 +1,45 @@
+version: '3'
+services:
+  db:
+    build: docker/db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=password
+    healthcheck:
+      test: "CMD echo 'SELECT 1' | PGPASSWORD=password psql --host 127.0.0.1 --username postgres --dbname enju_leaf_development --quiet --no-align --tuples-only"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/enju
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+  worker:
+    build: .
+    command: bash -c "bundle exec rake environment resque:work QUEUE=enju_leaf,mailers TERM_CHILD=1"
+    volumes:
+      - .:/enju
+    depends_on:
+      - db
+  redis:
+    image: redis:5-alpine
+    volumes:
+      - redis_data:/data
+  solr:
+    build: docker/solr
+    volumes:
+      - solr_data:/opt/solr/server/solr/mycores
+    entrypoint:
+      - solr-precreate
+      - enju_leaf_development
+      - /tmp/configsets/sunspot/conf
+volumes:
+  db_data:
+  solr_data:
+  redis_data:
