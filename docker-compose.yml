@@ -12,7 +12,7 @@ services:
       timeout: 5s
       retries: 3
   web:
-    build: .
+    image: projectnextl/enju_leaf:latest
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     volumes:
       - .:/enju
@@ -21,7 +21,7 @@ services:
     depends_on:
       - db
   worker:
-    build: .
+    image: projectnextl/enju_leaf:latest
     command: bash -c "bundle exec rake environment resque:work QUEUE=enju_leaf,mailers TERM_CHILD=1"
     volumes:
       - .:/enju
