@@ -1,5 +1,7 @@
 # Next-L Enju Leaf Docker Image
 
+このDockerイメージは、開発者向けの不安定版（masterブランチを）をもとに作成しています。安定版を試す場合は、[VMwareの仮想マシンイメージ](https://www.next-l.jp/?page=VM)を使用してください。
+
 ## 初期設定
 
 事前に[docker-composeのインストール](https://docs.docker.com/compose/install/)が必要です。
