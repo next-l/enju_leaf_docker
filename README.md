@@ -1,24 +1,35 @@
-# README
+# Next-L Enju Leaf Docker Image
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 初期設定
 
-Things you may want to cover:
+事前に[docker-composeのインストール](https://docs.docker.com/compose/install/)が必要です。
 
-* Ruby version
+```sh
+$ git clone https://github.com/next-l/enju_leaf_docker.git
+$ cd enju_leaf_docker
+$ docker-compose up -d
+$ docker-compose run web rails g enju_leaf:seed # 初期データ投入
+```
 
-* System dependencies
+## 起動
 
-* Configuration
+```
+$ docker-compose up -d
+```
 
-* Database creation
+アプリケーションには http://localhost:3000 でアクセスできます。
 
-* Database initialization
+## 終了
 
-* How to run the test suite
+```sh
+$ docker-compose stop # 停止
+$ docker-compose down # コンテナ削除
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## 参考資料
 
-* Deployment instructions
+- [enju_docker](https://github.com/tuyoshia/enju_docker)
 
-* ...
+## 連絡先
+
+- [TANABE, Kosuke (@nabeta)](https://github.com/nabeta)
