@@ -5,8 +5,10 @@ RUN mkdir /enju
 WORKDIR /enju
 COPY Gemfile /enju/Gemfile
 COPY Gemfile.lock /enju/Gemfile.lock
-RUN bundle install
 COPY . /enju
+RUN useradd -m enju && chown -R enju /enju
+USER enju
+RUN bundle install -j4
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
