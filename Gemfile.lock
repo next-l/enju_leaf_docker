@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 575896209d26788e37b5a0a198cc3338746b75ff
+  revision: b7bbea48c771c4b595fc665134190349210f5ee9
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_circulation.git
-  revision: afd129f7982c81fab63b2a3cda86523eb838cc2c
+  revision: 35cb93b502ef522a9ec03598f23148afb8889261
   specs:
     enju_circulation (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: c3a8d4bfda1af90a28b5aadc05027afecd204186
+  revision: f1aae7b6800b164b53dea848093149c26dfb742f
   specs:
     enju_event (0.4.0.beta.1)
       enju_message (~> 0.4.0.beta.1)
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: 78a41f6c26b5cfbd4d5a99f78335c1631994214b
+  revision: 81526930d07ace7cde8b1e3fc1addea08df94a77
   specs:
     enju_leaf (1.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -40,14 +40,12 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: edc501264fc998e93fe4a712cddeefa86fe2e3bf
+  revision: 26fc9ceb833026e969b557a0ada5b64a5dabf102
   specs:
     enju_library (0.4.0.beta.1)
       enju_seed (~> 0.4.0.beta.1)
       geocoder
-      paper_trail (~> 10.1)
-      paperclip (~> 6.1)
-      paperclip-meta
+      mini_magick
       statesman (~> 3.5)
 
 GIT
@@ -59,7 +57,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_message.git
-  revision: 43882df5d6c184e0ef70881b3031bc4c679497e1
+  revision: 7a37772519a386b12dd401032a4145e54cbdef68
   specs:
     enju_message (0.4.0.beta.1)
       awesome_nested_set (~> 3.1)
@@ -68,7 +66,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_ndl.git
-  revision: b5883ca96b9f70b59897cb899cbff84e7c2d6f41
+  revision: f6ae3e69364d5a2892ae8465f8780a6ccd617674
   specs:
     enju_ndl (0.4.0.beta.1)
       faraday
@@ -77,7 +75,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_seed.git
-  revision: 5cf23ef39d28c5fa78746a7cb013312a773edd95
+  revision: 5a27f9afe3bf7235997ed4aa08a02d93f2e1bead
   specs:
     enju_seed (0.4.0.beta.2)
       acts_as_list (~> 0.9)
@@ -89,7 +87,6 @@ GIT
       kaminari (~> 1.1)
       kramdown
       mobility
-      paperclip (~> 6.1)
       pundit (~> 2.0)
       rails (~> 5.2)
       rails_autolink
@@ -101,7 +98,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: 7470e7ae02eaa97cc9f1dd77b1092d17cb35c17c
+  revision: 9daf20c3f8ddcd9d5851943e7cf05e3dda24e969
   specs:
     enju_subject (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -180,7 +177,6 @@ GEM
     chromedriver-helper (2.1.0)
       archive-zip (~> 0.10)
       nokogiri (~> 1.8)
-    climate_control (0.2.0)
     cocoon (1.2.12)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -191,7 +187,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.4)
     crass (1.0.4)
-    devise (4.5.0)
+    devise (4.6.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 6.0)
@@ -260,10 +256,8 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (0.9.2)
-    mime-types (3.2.2)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2018.0812)
     mimemagic (0.3.3)
+    mini_magick (4.9.2)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
@@ -283,17 +277,6 @@ GEM
     nori (2.6.0)
     options (2.3.2)
     orm_adapter (0.5.0)
-    paper_trail (10.2.0)
-      activerecord (>= 4.2, < 6.1)
-      request_store (~> 1.1)
-    paperclip (6.1.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      mime-types
-      mimemagic (~> 0.3.0)
-      terrapin (~> 0.6.0)
-    paperclip-meta (3.1.0)
-      paperclip (>= 5.0)
     pg (1.1.4)
     pr_geohash (1.0.0)
     progress_bar (1.3.0)
@@ -421,12 +404,10 @@ GEM
     sunspot_rails (2.3.0)
       rails (>= 3)
       sunspot (= 2.3.0)
-    terrapin (0.6.0)
-      climate_control (>= 0.0.3, < 1.0)
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
-    timeliness (0.3.9)
+    timeliness (0.3.10)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (4.1.20)
