@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 4e33d0fc2a23acaf2112f443bc838c35ef864f8d
+  revision: 2e0b9a8cab70e9b614ea8bc8c9a52059eacf339c
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: f1aae7b6800b164b53dea848093149c26dfb742f
+  revision: 1eb1dbfb8359ef1a943d2aa4f3547810af17cf59
   specs:
     enju_event (0.4.0.beta.1)
       enju_message (~> 0.4.0.beta.1)
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: 2b76337b6c560f1a2c6a23397899eafc697b251f
+  revision: 309bdfc3a667ee20cb352f676387a10deb1875c1
   specs:
     enju_leaf (1.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -40,7 +40,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: 26fc9ceb833026e969b557a0ada5b64a5dabf102
+  revision: 0275168a91a37fe54870b099dd9be4696be5f639
   specs:
     enju_library (0.4.0.beta.1)
       enju_seed (~> 0.4.0.beta.1)

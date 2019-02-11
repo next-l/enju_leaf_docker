@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Enju
+module EnjuLeafDocker
   class Application < Rails::Application
     config.i18n.available_locales = [:en, :ja]
     config.i18n.enforce_available_locales = true
