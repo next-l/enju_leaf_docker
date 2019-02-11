@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 4c5e63a1988a055c1a69e96102eba435896ef22c
+  revision: 4e33d0fc2a23acaf2112f443bc838c35ef864f8d
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: e160241e77173a80495d74f127680ea93ff4e9e1
+  revision: 2b76337b6c560f1a2c6a23397899eafc697b251f
   specs:
     enju_leaf (1.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
