@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 295f7953191e3056933994567821a3ebf63813a3
+  revision: b545c1ff95ddfbec6efbc917faf2d2b5c5155e4e
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
