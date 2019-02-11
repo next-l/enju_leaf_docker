@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 2e0b9a8cab70e9b614ea8bc8c9a52059eacf339c
+  revision: 295f7953191e3056933994567821a3ebf63813a3
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_circulation.git
-  revision: 35cb93b502ef522a9ec03598f23148afb8889261
+  revision: 2be8c3d1fd7e2e83802d4e5173cc73b77c871374
   specs:
     enju_circulation (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: 1eb1dbfb8359ef1a943d2aa4f3547810af17cf59
+  revision: f08d73c836c5447ed120b49bc4a195fdaf9c5c78
   specs:
     enju_event (0.4.0.beta.1)
       enju_message (~> 0.4.0.beta.1)
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: f09ad7566691517b34df117780cf828208a731e4
+  revision: b5815251775b1e48d50290b50a1bf158e457f768
   specs:
     enju_leaf (1.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -40,7 +40,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: 0275168a91a37fe54870b099dd9be4696be5f639
+  revision: 1a84b039828de815b419f5b01562c8e4937c892e
   specs:
     enju_library (0.4.0.beta.1)
       enju_seed (~> 0.4.0.beta.1)
@@ -50,14 +50,14 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_manifestation_viewer.git
-  revision: 18203641df1b155f296be649b99a795008b9bfc2
+  revision: a860efde391014ff18ab2f5ae18f231a898d55a2
   specs:
     enju_manifestation_viewer (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
 
 GIT
   remote: https://github.com/next-l/enju_message.git
-  revision: 7a37772519a386b12dd401032a4145e54cbdef68
+  revision: 2798f807cc6afaaeb53eba0c63499b1d7dc937d4
   specs:
     enju_message (0.4.0.beta.1)
       awesome_nested_set (~> 3.1)
@@ -66,7 +66,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_ndl.git
-  revision: f6ae3e69364d5a2892ae8465f8780a6ccd617674
+  revision: 4037bb742b70b40815c74bee8e46cf241fa93d4f
   specs:
     enju_ndl (0.4.0.beta.1)
       faraday
@@ -98,7 +98,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: 9daf20c3f8ddcd9d5851943e7cf05e3dda24e969
+  revision: 7690e0b45245d0e712cea807a13505de8e61915c
   specs:
     enju_subject (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -187,7 +187,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.4)
     crass (1.0.4)
-    devise (4.6.0)
+    devise (4.6.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 6.0)
