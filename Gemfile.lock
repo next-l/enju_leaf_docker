@@ -50,7 +50,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_manifestation_viewer.git
-  revision: a860efde391014ff18ab2f5ae18f231a898d55a2
+  revision: 335e27d7c2d70675c5c6289a651c6454a2bc73bf
   specs:
     enju_manifestation_viewer (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -66,7 +66,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_ndl.git
-  revision: 4037bb742b70b40815c74bee8e46cf241fa93d4f
+  revision: 7f3d0ff203fd97a9fe1fc8bd80d77ca2994cfda8
   specs:
     enju_ndl (0.4.0.beta.1)
       faraday
@@ -158,7 +158,7 @@ GEM
       activerecord (>= 4.0.0, < 5.3)
     bcrypt (3.1.12)
     bindex (0.5.0)
-    bootsnap (1.3.2)
+    bootsnap (1.4.0)
       msgpack (~> 1.0)
     browser (2.5.3)
     builder (3.2.3)
@@ -322,24 +322,8 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     redis (4.1.0)
-    redis-actionpack (5.0.2)
-      actionpack (>= 4.0, < 6)
-      redis-rack (>= 1, < 3)
-      redis-store (>= 1.1.0, < 2)
-    redis-activesupport (5.0.7)
-      activesupport (>= 3, < 6)
-      redis-store (>= 1.3, < 2)
     redis-namespace (1.6.0)
       redis (>= 3.0.4)
-    redis-rack (2.0.5)
-      rack (>= 1.5, < 3)
-      redis-store (>= 1.2, < 2)
-    redis-rails (5.0.2)
-      redis-actionpack (>= 5.0, < 6)
-      redis-activesupport (>= 5.0, < 6)
-      redis-store (>= 1.2, < 2)
-    redis-store (1.6.0)
-      redis (>= 2.2, < 5)
     regexp_parser (1.3.0)
     request_store (1.4.1)
       rack (>= 1.4)
@@ -463,7 +447,6 @@ DEPENDENCIES
   progress_bar
   puma (~> 3.11)
   rails (~> 5.2.2)
-  redis-rails
   resque
   sass-rails (~> 5.0)
   selenium-webdriver
