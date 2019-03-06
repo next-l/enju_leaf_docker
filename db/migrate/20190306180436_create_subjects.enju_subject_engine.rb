@@ -1,8 +1,8 @@
 # This migration comes from enju_subject_engine (originally 29)
 class CreateSubjects < ActiveRecord::Migration[5.2]
   def change
-    create_table :subjects do |t|
-      t.references :parent, foreign_key: {to_table: :subjects}
+    create_table :subjects, id: :uuid do |t|
+      t.references :parent, foreign_key: {to_table: :subjects}, type: :uuid
       t.integer :use_term_id, index: true
       t.string :term, index: true
       t.text :term_transcription

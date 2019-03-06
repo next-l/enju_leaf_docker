@@ -5,7 +5,7 @@ class CreateEventImportFileTransitions < ActiveRecord::Migration[5.2]
       t.string :to_state
       t.jsonb :metadata, default: {}
       t.integer :sort_key
-      t.references :event_import_file
+      t.references :event_import_file, type: :uuid
       t.timestamps
     end
 

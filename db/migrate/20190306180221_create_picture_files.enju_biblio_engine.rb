@@ -1,12 +1,10 @@
 # This migration comes from enju_biblio_engine (originally 20081027150907)
 class CreatePictureFiles < ActiveRecord::Migration[5.2]
   def change
-    create_table :picture_files do |t|
+    create_table :picture_files, id: :uuid do |t|
       t.references :picture_attachable, null: false, type: :uuid
       t.string :picture_attachable_type, null: false
-      t.string :content_type
       t.text :title
-      t.string :thumbnail
       t.integer :position
 
       t.timestamps
