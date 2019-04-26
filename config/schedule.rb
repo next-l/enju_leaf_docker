@@ -19,7 +19,7 @@
 
 # Learn more: http://github.com/javan/whenever
 
-set :path, '/enju'
+set :path, '/Users/kosuke/enju_leaf_docker'
 set :environment, :development
 set :output, "#{path}/log/cron_log.log"
 
