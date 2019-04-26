@@ -443,7 +443,6 @@ DEPENDENCIES
   progress_bar
   puma (~> 3.11)
   rails (~> 5.2.3)
-  redis
   resque
   sass-rails (~> 5.0)
   selenium-webdriver
