@@ -10,6 +10,7 @@
 $ git clone https://github.com/next-l/enju_leaf_docker.git
 $ cd enju_leaf_docker
 $ docker-compose up -d
+$ docker-compose run web rake db:migrate # データベース作成
 $ docker-compose run web rails g enju_leaf:seed # 初期データ投入
 ```
 
