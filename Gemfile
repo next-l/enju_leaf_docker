@@ -69,6 +69,7 @@ gem 'enju_circulation', github: 'next-l/enju_circulation'
 gem 'enju_subject', github: 'next-l/enju_subject'
 gem 'enju_message', github: 'next-l/enju_message'
 gem 'enju_event', github: 'next-l/enju_event'
+gem 'enju_inventory', github: 'next-l/enju_inventory'
 gem 'charlock_holmes', platform: :mri
 gem 'non-stupid-digest-assets'
 # gem 'sunspot_solr', '~> 2.3'

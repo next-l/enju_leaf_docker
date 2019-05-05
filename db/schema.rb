@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_26_042153) do
+ActiveRecord::Schema.define(version: 2019_05_05_085310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
@@ -383,7 +383,7 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
   end
 
   create_table "create_types", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.jsonb "display_name_translations", default: {}, null: false
     t.text "note"
     t.integer "position"
@@ -973,6 +973,15 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
     t.index ["sender_id"], name: "index_messages_on_sender_id"
   end
 
+  create_table "ndl_bib_id_records", force: :cascade do |t|
+    t.string "body", null: false
+    t.bigint "manifestation_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["body"], name: "index_ndl_bib_id_records_on_body", unique: true
+    t.index ["manifestation_id"], name: "index_ndl_bib_id_records_on_manifestation_id"
+  end
+
   create_table "ndla_records", force: :cascade do |t|
     t.bigint "agent_id"
     t.string "body", null: false
@@ -1028,10 +1037,6 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
     t.integer "position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "picture_meta"
-    t.string "picture_fingerprint"
-    t.integer "picture_width"
-    t.integer "picture_height"
     t.index ["picture_attachable_id", "picture_attachable_type"], name: "index_picture_files_on_picture_attachable_id_and_type"
     t.index ["picture_attachable_id"], name: "index_picture_files_on_picture_attachable_id"
   end
@@ -1049,7 +1054,7 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
   end
 
   create_table "produce_types", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.jsonb "display_name_translations", default: {}, null: false
     t.text "note"
     t.integer "position"
@@ -1088,6 +1093,7 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
     t.index ["checkout_icalendar_token"], name: "index_profiles_on_checkout_icalendar_token", unique: true
     t.index ["library_id"], name: "index_profiles_on_library_id"
     t.index ["user_group_id"], name: "index_profiles_on_user_group_id"
+    t.index ["user_number"], name: "index_profiles_on_user_number", unique: true
   end
 
   create_table "realize_types", force: :cascade do |t|
@@ -1472,8 +1478,8 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
     t.datetime "updated_at", null: false
     t.integer "valid_period_for_new_user", default: 0, null: false
     t.datetime "expired_at"
-    t.integer "number_of_day_to_notify_overdue", default: 1, null: false
-    t.integer "number_of_day_to_notify_due_date", default: 7, null: false
+    t.integer "number_of_day_to_notify_overdue", default: 7, null: false
+    t.integer "number_of_day_to_notify_due_date", default: 3, null: false
     t.integer "number_of_time_to_notify_overdue", default: 3, null: false
     t.index ["name"], name: "index_user_groups_on_name", unique: true
   end
@@ -1484,6 +1490,7 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["role_id"], name: "index_user_has_roles_on_role_id"
+    t.index ["user_id", "role_id"], name: "index_user_has_roles_on_user_id_and_role_id", unique: true
     t.index ["user_id"], name: "index_user_has_roles_on_user_id"
   end
 
@@ -1566,7 +1573,7 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
     t.string "unlock_token"
     t.datetime "locked_at"
     t.datetime "confirmed_at"
-    t.bigint "profile_id"
+    t.bigint "profile_id", null: false
     t.index ["email"], name: "index_users_on_email"
     t.index ["profile_id"], name: "index_users_on_profile_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
@@ -1647,6 +1654,7 @@ ActiveRecord::Schema.define(version: 2019_04_26_042153) do
   add_foreign_key "manifestation_reserve_stats", "users"
   add_foreign_key "manifestations", "carrier_types"
   add_foreign_key "messages", "messages", column: "parent_id"
+  add_foreign_key "ndl_bib_id_records", "manifestations"
   add_foreign_key "ndla_records", "agents"
   add_foreign_key "participates", "events"
   add_foreign_key "periodical_and_manifestations", "manifestations"
