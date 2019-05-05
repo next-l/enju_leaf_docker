@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: 3886749b93ac564ede17c847018c94ba46bf105d
+  revision: 681796e92c995218fc6c75479d26c8bb0864f100
   specs:
     enju_leaf (1.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
