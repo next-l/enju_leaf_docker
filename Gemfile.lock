@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: dea9f86abae7a762cdde86903b16cc5a2826a985
+  revision: 8be206cee393e3ff81fc446a6e53a1d11b4dc02d
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_circulation.git
-  revision: 2b4215a6b47a69cc65e33b504a66b3d091f4f0a1
+  revision: ef6a3181e23a4f61cd029b1b295877a1700c8cdc
   specs:
     enju_circulation (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: f04a8c63b9c0bccc46fe899dc557db195c8e1e36
+  revision: 544a19d026eb0c9c773c18d4c79f21807d1b556d
   specs:
     enju_event (0.4.0.beta.1)
       enju_message (~> 0.4.0.beta.1)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: 14592732b027fef4c4ccbf440f980cfa85228a57
+  revision: 3886749b93ac564ede17c847018c94ba46bf105d
   specs:
     enju_leaf (1.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: 3393f470cb0483533ff0c1379e610ed7567d8507
+  revision: 8785ae516b8afc6e53ebab1cc736f5247662ecc5
   specs:
     enju_library (0.4.0.beta.1)
       enju_seed (~> 0.4.0.beta.1)
@@ -49,14 +49,14 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_manifestation_viewer.git
-  revision: e724e10d0caed5d177e4b7abb542e5c6bd5dcfa7
+  revision: fe3bbcb2bbbacd747155b857fdbaffe1469b31cb
   specs:
     enju_manifestation_viewer (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
 
 GIT
   remote: https://github.com/next-l/enju_message.git
-  revision: 8a9069f3aab768cbb5231219ce52ba15c3fb3dd3
+  revision: 3b265c8b22bd75b185edf6a63be6901e7a4d1f8a
   specs:
     enju_message (0.4.0.beta.1)
       awesome_nested_set (~> 3.1)
@@ -65,7 +65,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_ndl.git
-  revision: e7b3c546dbc246a691c28553aa5c1b2dd4085252
+  revision: dcd7961e08c70f334bcef8ea3b2ed65f7c7388bb
   specs:
     enju_ndl (0.4.0.beta.1)
       faraday
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_seed.git
-  revision: 71be243d0c0366a7ea1af7571a620c96a883c53c
+  revision: 3ac27ee640b03d28f1e289eafb6a4c558b4566fb
   specs:
     enju_seed (0.4.0.beta.2)
       acts_as_list (~> 0.9)
@@ -96,7 +96,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: 2a47850ee0bf3347d02975347f0270203fb12de3
+  revision: 5a4ed4f28bed2ee9c538ecc1fa589cc19a7f523d
   specs:
     enju_subject (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
