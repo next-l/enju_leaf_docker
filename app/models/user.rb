@@ -10,7 +10,6 @@ class User < ApplicationRecord
 
 end
 Item.include(EnjuLibrary::EnjuItem)
-User.include(EnjuBiblio::EnjuUser)
 Accept.include(EnjuCirculation::EnjuAccept)
 Basket.include(EnjuCirculation::EnjuBasket)
 CarrierType.include(EnjuCirculation::EnjuCarrierType)
