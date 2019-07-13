@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: d81bedf78458b66025e185a34fff8ad2d1319bd3
+  revision: 5a93e7422e355490e7a255793569323576ebd1a7
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_circulation.git
-  revision: f8042906f3f15ab5016333476ec51cb2bdd34b72
+  revision: 1c507fe7e674a9e7c5605cc80f4c475b5130d2ba
   specs:
     enju_circulation (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: 09d5ee5b6ff54ca71ea697119e6ed39eeb946d2c
+  revision: 2af7846db1d88384bf6fb67434a003ad14991d53
   specs:
     enju_event (0.4.0.beta.1)
       enju_message (~> 0.4.0.beta.1)
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: bc0f4d47b70fdd6aff1f87efa887fab7a498fdd3
+  revision: ace559232cdec0a3185705f4c0cfd14f4ca9ec06
   specs:
     enju_leaf (1.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -40,7 +40,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: 6f1fa81fca4f933ed270db5004c1ea1ed114999d
+  revision: a13b33206f99127b0b4275dc47fa69eee41456dc
   specs:
     enju_library (0.4.0.beta.1)
       enju_seed (~> 0.4.0.beta.1)
@@ -51,14 +51,14 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_manifestation_viewer.git
-  revision: 50cbdb93cece150b7685d679ed5d3850db62fdee
+  revision: 7d472157082d8f864702580efac9fa6d9f9f88ce
   specs:
     enju_manifestation_viewer (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
 
 GIT
   remote: https://github.com/next-l/enju_message.git
-  revision: ee948b15c18d3744707c05584f5f418aab3b3592
+  revision: a3729509029170128f7b309db56f61f16f65149d
   specs:
     enju_message (0.4.0.beta.1)
       awesome_nested_set (~> 3.1)
@@ -67,7 +67,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_ndl.git
-  revision: b572af6782742614b19662590d6c2593f4e5db25
+  revision: 0e6172bc0a7a014f8e555aa2cda6afb2f8d9da76
   specs:
     enju_ndl (0.4.0.beta.1)
       faraday
@@ -76,7 +76,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_seed.git
-  revision: 66d21790b21d07935c165e9df1856214bf9406e4
+  revision: ec09ce133f1f7f2f513633a3258593a21ac1f113
   specs:
     enju_seed (0.4.0.beta.2)
       acts_as_list (~> 0.9)
@@ -95,12 +95,12 @@ GIT
       simple_form
       sitemap_generator (~> 6.0)
       strip_attributes (~> 1.9)
-      sunspot_rails (~> 2.4)
+      sunspot_rails (~> 2.5)
       validates_timeliness (~> 4.1)
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: dd6b67d2452532c0e1cc1f9f99717a175d6ded52
+  revision: d2baaefe5dfdb0ff4e064e110baf474f0c9be0c3
   specs:
     enju_subject (0.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)

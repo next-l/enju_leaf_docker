@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_13_081892) do
+ActiveRecord::Schema.define(version: 2019_07_13_123025) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
@@ -270,7 +270,9 @@ ActiveRecord::Schema.define(version: 2019_07_13_081892) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer "lock_version", default: 0, null: false
+    t.bigint "checkin_id"
     t.index ["basket_id"], name: "index_checkins_on_basket_id"
+    t.index ["checkin_id"], name: "index_checkins_on_checkin_id"
     t.index ["item_id"], name: "index_checkins_on_item_id"
     t.index ["librarian_id"], name: "index_checkins_on_librarian_id"
   end
@@ -1581,7 +1583,9 @@ ActiveRecord::Schema.define(version: 2019_07_13_081892) do
     t.string "unlock_token"
     t.datetime "locked_at"
     t.datetime "confirmed_at"
+    t.bigint "profile_id"
     t.index ["email"], name: "index_users_on_email"
+    t.index ["profile_id"], name: "index_users_on_profile_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
@@ -1604,6 +1608,7 @@ ActiveRecord::Schema.define(version: 2019_07_13_081892) do
   add_foreign_key "checked_items", "baskets"
   add_foreign_key "checked_items", "items"
   add_foreign_key "checked_items", "users"
+  add_foreign_key "checkins", "checkins"
   add_foreign_key "checkins", "items"
   add_foreign_key "checkout_stat_has_manifestations", "manifestations"
   add_foreign_key "checkout_stat_has_users", "user_checkout_stats"
@@ -1640,4 +1645,5 @@ ActiveRecord::Schema.define(version: 2019_07_13_081892) do
   add_foreign_key "user_has_roles", "roles"
   add_foreign_key "user_has_roles", "users"
   add_foreign_key "user_reserve_stats", "users"
+  add_foreign_key "users", "profiles"
 end
