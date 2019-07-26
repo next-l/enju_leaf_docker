@@ -73,6 +73,7 @@ gem 'charlock_holmes', platform: :mri
 gem 'non-stupid-digest-assets'
 gem 'sunspot_solr', '~> 2.5'
 gem 'progress_bar'
+gem 'redis', '~> 4.0'
 gem 'resque', require: 'resque/server'
 gem 'dotenv-rails'
 gem 'fix_microsoft_links'

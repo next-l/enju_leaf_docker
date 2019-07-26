@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 0d50dc26bd7f10fc92800e226b72ec1ce8843940
+  revision: 7e80d063dd05d89c6fd478f6e38b39ccdbf04dff
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: ffeb0b73032f157990dffcbd221852ae553b2239
+  revision: 0d1888e2d7c1ac3ca0c1f86a59fb33b73b4dd87b
   specs:
     enju_leaf (1.4.0.beta.1)
       enju_biblio (~> 0.4.0.beta.1)
@@ -470,6 +470,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.3)
   rails-i18n
+  redis (~> 4.0)
   resque
   sass-rails (~> 5.0)
   selenium-webdriver
