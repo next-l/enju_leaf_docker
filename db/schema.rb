@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_27_055225) do
+ActiveRecord::Schema.define(version: 2019_07_27_190020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
@@ -708,6 +708,15 @@ ActiveRecord::Schema.define(version: 2019_07_27_055225) do
     t.index ["shelf_id"], name: "index_items_on_shelf_id"
   end
 
+  create_table "jpno_records", force: :cascade do |t|
+    t.string "body", null: false
+    t.bigint "manifestation_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["body"], name: "index_jpno_records_on_body", unique: true
+    t.index ["manifestation_id"], name: "index_jpno_records_on_manifestation_id"
+  end
+
   create_table "languages", id: :serial, force: :cascade do |t|
     t.string "name", null: false
     t.string "native_name"
@@ -1023,6 +1032,24 @@ ActiveRecord::Schema.define(version: 2019_07_27_055225) do
     t.index ["parent_id"], name: "index_messages_on_parent_id"
     t.index ["receiver_id"], name: "index_messages_on_receiver_id"
     t.index ["sender_id"], name: "index_messages_on_sender_id"
+  end
+
+  create_table "ndl_bib_id_records", force: :cascade do |t|
+    t.string "body", null: false
+    t.bigint "manifestation_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["body"], name: "index_ndl_bib_id_records_on_body", unique: true
+    t.index ["manifestation_id"], name: "index_ndl_bib_id_records_on_manifestation_id"
+  end
+
+  create_table "ndla_records", force: :cascade do |t|
+    t.bigint "agent_id"
+    t.string "body", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["agent_id"], name: "index_ndla_records_on_agent_id"
+    t.index ["body"], name: "index_ndla_records_on_body", unique: true
   end
 
   create_table "owns", id: :serial, force: :cascade do |t|
@@ -1681,12 +1708,15 @@ ActiveRecord::Schema.define(version: 2019_07_27_055225) do
   add_foreign_key "item_has_use_restrictions", "items"
   add_foreign_key "item_has_use_restrictions", "use_restrictions"
   add_foreign_key "items", "manifestations"
+  add_foreign_key "jpno_records", "manifestations"
   add_foreign_key "lending_policies", "items"
   add_foreign_key "lending_policies", "user_groups"
   add_foreign_key "libraries", "library_groups"
   add_foreign_key "library_groups", "users"
   add_foreign_key "manifestation_checkout_stats", "users"
   add_foreign_key "manifestation_reserve_stats", "users"
+  add_foreign_key "ndl_bib_id_records", "manifestations"
+  add_foreign_key "ndla_records", "agents"
   add_foreign_key "profiles", "users"
   add_foreign_key "reserve_stat_has_manifestations", "manifestations"
   add_foreign_key "reserve_stat_has_users", "user_reserve_stats"
