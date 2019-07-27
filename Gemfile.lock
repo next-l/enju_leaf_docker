@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 7e80d063dd05d89c6fd478f6e38b39ccdbf04dff
+  revision: f3ea96fd874682f37bd66079f141154491aea4e5
   specs:
     enju_biblio (0.4.0.beta.1)
       dynamic_form
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: f516b5699f3d211bf0c3aaee08d805ec14e6cbbc
+  revision: f00441d570c4e8e4b5e61579797390aed7818e60
   specs:
     enju_event (0.4.0.beta.1)
       enju_message (~> 0.4.0.beta.1)
@@ -461,7 +461,6 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   jquery-ui-rails (~> 4.2)
-  json_translate
   listen (>= 3.0.5, < 3.2)
   non-stupid-digest-assets
   paper_trail
