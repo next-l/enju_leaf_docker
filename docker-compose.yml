@@ -19,7 +19,7 @@ services:
     environment:
       - http_proxy
       - https_proxy
-      - no_proxy=solr
+      - no_proxy=solr,localhost
     env_file:
       - ./.env
     build:
