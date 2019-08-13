@@ -10,7 +10,7 @@ COPY Gemfile.lock /enju/Gemfile.lock
 RUN bundle install -j4
 COPY . /enju
 RUN useradd -m enju && chown -R enju /enju
-USER enju
+#USER enju
 ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
