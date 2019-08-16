@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 4cd6ee4f27f120c34d38910834e9831efdcca05b
+  revision: 8020e9a4fe16b29b7f5193954e126571a4afff59
   specs:
-    enju_biblio (0.4.0.beta.1)
+    enju_biblio (0.5.0.beta.1)
       dynamic_form
-      enju_library (~> 0.4.0.beta.1)
+      enju_library (~> 0.5.0.beta.1)
       faraday
       library_stdnums
       lisbn
@@ -13,16 +13,16 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_circulation.git
-  revision: 2cc62fd67bb85efd8538febb40768d258ab9d219
+  revision: dcf657e31a74f2a707b386deeb68fbdca409bc1b
   specs:
     enju_circulation (0.4.0.beta.1)
-      enju_biblio (~> 0.4.0.beta.1)
+      enju_biblio (~> 0.5.0.beta.1)
       enju_event (~> 0.4.0.beta.1)
-      enju_manifestation_viewer (~> 0.4.0.beta.1)
+      enju_manifestation_viewer (~> 0.5.0.beta.1)
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: f00441d570c4e8e4b5e61579797390aed7818e60
+  revision: 41511e03b2745491199cf733b529fe58ae933c91
   specs:
     enju_event (0.4.0.beta.1)
       enju_message (~> 0.4.0.beta.1)
@@ -30,44 +30,42 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: 49df2a5ef34564918b66d6c04bed42fdd72e18d5
+  revision: 4aa3ac323f9f2d32626db129bad13a3cfbfec17f
   specs:
-    enju_leaf (1.4.0.beta.1)
-      enju_biblio (~> 0.4.0.beta.1)
-      enju_library (~> 0.4.0.beta.1)
+    enju_leaf (3.0.0.beta.1)
+      enju_biblio (~> 0.5.0.beta.1)
+      enju_library (~> 0.5.0.beta.1)
       jquery-ui-rails (~> 4.2.1)
-      rails (~> 5.2)
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: e51df6e5ac3a20e32c77898d6d872c6aa1c71ff5
+  revision: bcda81a93f360e1f7283b33c0b7dbe155d90e543
   specs:
-    enju_library (0.4.0.beta.1)
-      enju_seed (~> 0.4.0.beta.1)
+    enju_library (0.5.0.beta.1)
+      enju_seed (~> 0.5.0.beta.1)
       geocoder
       mini_magick
-      paperclip-meta
       statesman (~> 4.1)
 
 GIT
   remote: https://github.com/next-l/enju_manifestation_viewer.git
-  revision: fc2cc2859a53d7914a546e9327c498ae2ca0499d
+  revision: aceeef346ea3c7084c5bb132dd462cfa8d98e141
   specs:
-    enju_manifestation_viewer (0.4.0.beta.1)
-      enju_biblio (~> 0.4.0.beta.1)
+    enju_manifestation_viewer (0.5.0.beta.1)
+      enju_biblio (~> 0.5.0.beta.1)
 
 GIT
   remote: https://github.com/next-l/enju_message.git
-  revision: f73b79e835d26c2126e3766c10ee9aa835411d40
+  revision: 6afbb4012cdd2a1f2980d30dc4d648628c68085f
   specs:
     enju_message (0.4.0.beta.1)
       awesome_nested_set (~> 3.1)
-      enju_library (~> 0.4.0.beta.1)
+      enju_library (~> 0.5.0.beta.1)
       erubis
 
 GIT
   remote: https://github.com/next-l/enju_ndl.git
-  revision: b6e6d7d15699003379493a02cf9467e74ad03fe0
+  revision: 93be4675f539edf7417d87559664c8d90dd09aad
   specs:
     enju_ndl (0.4.0.beta.1)
       faraday
@@ -76,9 +74,9 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_seed.git
-  revision: dd63133577b74ce957643add3e1b3b1fed99e2f6
+  revision: c093a2c6150071344b84e3e17195755a3eb36269
   specs:
-    enju_seed (0.4.0.beta.2)
+    enju_seed (0.5.0.beta.1)
       acts_as_list (~> 0.9)
       addressable (~> 2.6)
       browser (~> 2.6)
@@ -88,9 +86,7 @@ GIT
       json_translate (~> 4.0)
       kaminari (~> 1.1)
       kramdown
-      paperclip
-      pundit (~> 2.0)
-      rails (~> 5.2)
+      pundit (~> 2.1)
       rails_autolink
       simple_form
       sitemap_generator (~> 6.0)
@@ -100,10 +96,10 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: 2f8ba524bbe4ce61fd4ebe6c2ea6e92dd20d8d1a
+  revision: 0f1c371aaf3d13fa503583971bb4298caaaccfa9
   specs:
     enju_subject (0.4.0.beta.1)
-      enju_biblio (~> 0.4.0.beta.1)
+      enju_biblio (~> 0.5.0.beta.1)
 
 GEM
   remote: https://rubygems.org/
@@ -299,7 +295,7 @@ GEM
       options (~> 2.3.0)
     public_suffix (3.1.1)
     puma (3.12.1)
-    pundit (2.0.1)
+    pundit (2.1.0)
       activesupport (>= 3.0.0)
     rack (2.0.7)
     rack-protection (2.0.5)
@@ -464,12 +460,12 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   non-stupid-digest-assets
   paper_trail
+  paperclip-meta
   pg (>= 0.18, < 2.0)
   progress_bar
   puma (~> 3.11)
   rails (~> 5.2.3)
   rails-i18n
-  redis (~> 4.0)
   resque
   sass-rails (~> 5.0)
   selenium-webdriver
