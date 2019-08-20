@@ -1,4 +1,0 @@
-default:
-  name: default
-  display_name: "既定の予算"
-  position: 1
