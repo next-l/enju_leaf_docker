@@ -13,6 +13,8 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
@@ -73,12 +75,10 @@ gem 'charlock_holmes', platform: :mri
 gem 'non-stupid-digest-assets'
 gem 'sunspot_solr', '~> 2.5'
 gem 'progress_bar'
-gem 'redis', '~> 4.0'
 gem 'resque', require: 'resque/server'
 gem 'dotenv-rails'
 gem 'fix_microsoft_links'
 gem 'sinatra', '~> 2.0.0'
-gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 4.2'
 gem 'sitemap_generator'
 gem 'paper_trail'

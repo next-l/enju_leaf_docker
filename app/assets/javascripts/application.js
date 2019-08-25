@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require jquery2
 //= require enju_leaf/application
 //= require enju_event/application
 //= require activestorage
