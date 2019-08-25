@@ -1,39 +1,75 @@
-version: '3.1'
+version: '3.2'
 services:
   db:
     build: docker/db
     volumes:
       - db_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_INITDB_ARGS=${POSTGRES_INITDB_ARGS}
     healthcheck:
-      test: "CMD echo 'SELECT 1' | PGPASSWORD=password psql --host 127.0.0.1 --username postgres --dbname enju_leaf_development --quiet --no-align --tuples-only"
+      test: ["CMD-SHELL", "pg_isready -U postgres -h localhost"]
       interval: 30s
       timeout: 5s
       retries: 3
   web:
-    build: .
+    environment:
+      - http_proxy
+      - https_proxy
+      - no_proxy=solr,localhost
+    env_file:
+      - ./.env
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
     image: projectnextl/enju_leaf:latest
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     volumes:
       - .:/enju
+    healthcheck:
+      test: ["CMD-SHELL", "wget -O /dev/null http://localhost:3000"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
     ports:
       - "3000:3000"
     depends_on:
       - db
+      - solr
   worker:
-    build: .
+    environment:
+      - http_proxy
+      - https_proxy
+      - no_proxy=solr
+    env_file:
+      - ./.env
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
     image: projectnextl/enju_leaf:latest
     command: bash -c "bundle exec rake environment resque:work QUEUE=default,mailers TERM_CHILD=1"
     volumes:
       - .:/enju
     depends_on:
       - db
+      - solr
       - redis
   redis:
     image: redis:5-alpine
     volumes:
       - redis_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
   solr:
     build: docker/solr
     volumes:
@@ -42,6 +78,11 @@ services:
       - solr-precreate
       - enju_leaf_development
       - /tmp/configsets/sunspot/conf
+    healthcheck:
+      test: ["CMD-SHELL", "wget -O /dev/null http://localhost:8983/solr/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
 volumes:
   db_data:
   solr_data:
