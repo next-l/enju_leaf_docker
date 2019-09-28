@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: afa6fa262f73191dd6b090fa830426c408fe9a34
+  revision: 7ee2c804a52d23b02f377c1453eedb5d7164c25a
   specs:
     enju_biblio (0.5.0.beta.1)
       dynamic_form
@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_circulation.git
-  revision: ea5fecefe88aa7d113165ac9a17e3578efc40465
+  revision: 2a4d7e7cefa6d9588976766def87514c2f92e5af
   specs:
     enju_circulation (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: bcdcb11c5b2e9e865d1ac1d3435e6bf6d8a4bf20
+  revision: f3e1864a444158631c91cc76b4f8044da3f0f11b
   specs:
     enju_leaf (3.0.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: d6f7c0ffe5fc223ef3996d1cba36a8b35bfb3bb0
+  revision: 84e94e7ae88299d766c8eeeae88691a01c0e9727
   specs:
     enju_library (0.5.0.beta.1)
       enju_seed (~> 0.5.0.beta.1)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_manifestation_viewer.git
-  revision: 9a62f0cd6720e08300198fbdd2bedb53e8b5ab19
+  revision: 8b72f7ba7de8bc37e6b9f9b115757f8f960dc9e6
   specs:
     enju_manifestation_viewer (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -146,8 +146,8 @@ GEM
       tzinfo (~> 1.1)
     acts_as_list (0.9.19)
       activerecord (>= 3.0)
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
@@ -155,12 +155,12 @@ GEM
       activerecord (>= 4.0.0, < 7.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
-    bootsnap (1.4.4)
+    bootsnap (1.4.5)
       msgpack (~> 1.0)
     browser (2.6.1)
     builder (3.2.3)
     byebug (11.0.1)
-    capybara (3.28.0)
+    capybara (3.29.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -169,7 +169,7 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     charlock_holmes (0.7.6)
-    childprocess (1.0.1)
+    childprocess (2.0.0)
       rake (< 13.0)
     chromedriver-helper (2.1.1)
       archive-zip (~> 0.10)
@@ -184,7 +184,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
-    devise (4.7.0)
+    devise (4.7.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
@@ -195,15 +195,15 @@ GEM
       dotenv (= 2.7.5)
       railties (>= 3.2, < 6.1)
     dynamic_form (1.1.4)
-    erubi (1.8.0)
+    erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    faraday (0.15.4)
+    faraday (0.16.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.11.1)
     fix_microsoft_links (0.1.6)
       rack (>= 1.1.1)
-    friendly_id (5.2.5)
+    friendly_id (5.3.0)
       activerecord (>= 4.0.0)
     geocoder (1.5.1)
     globalid (0.4.2)
@@ -254,13 +254,13 @@ GEM
     mini_magick (4.9.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.11.3)
+    minitest (5.12.0)
     mono_logger (1.1.0)
     msgpack (1.3.1)
     multi_json (1.13.1)
     multipart-post (2.1.1)
     mustermann (1.0.3)
-    nio4r (2.4.0)
+    nio4r (2.5.2)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     non-stupid-digest-assets (1.0.9)
@@ -276,7 +276,7 @@ GEM
     progress_bar (1.3.0)
       highline (>= 1.6, < 3)
       options (~> 2.3.0)
-    public_suffix (3.1.1)
+    public_suffix (4.0.1)
     puma (3.12.1)
     pundit (2.1.0)
       activesupport (>= 3.0.0)
@@ -320,7 +320,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    redis (4.1.2)
+    redis (4.1.3)
     redis-namespace (1.6.0)
       redis (>= 3.0.4)
     regexp_parser (1.6.0)
@@ -340,7 +340,7 @@ GEM
       builder (>= 2.1.2)
       faraday (>= 0.9.0)
     ruby_dep (1.5.0)
-    rubyzip (1.2.3)
+    rubyzip (1.3.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -353,10 +353,10 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
     scrub_rb (1.0.1)
-    selenium-webdriver (3.142.3)
-      childprocess (>= 0.5, < 2.0)
+    selenium-webdriver (3.142.4)
+      childprocess (>= 0.5, < 3.0)
       rubyzip (~> 1.2, >= 1.2.2)
-    simple_form (4.1.0)
+    simple_form (5.0.0)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
     sinatra (2.0.7)
@@ -389,11 +389,11 @@ GEM
     sunspot_solr (2.5.0)
     thor (0.20.3)
     thread_safe (0.3.6)
-    tilt (2.0.9)
+    tilt (2.0.10)
     timeliness (0.4.3)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.20)
+    uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
