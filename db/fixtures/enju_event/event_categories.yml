@@ -1,0 +1,44 @@
+--- 
+event_category_00001: 
+  name: unknown
+  display_name_translations: {"en": "(not specified)", "ja": "未定"}
+  id: 1
+  note: ""
+  position: 1
+event_category_00002: 
+  name: closed
+  display_name_translations: {"en": "closed", "ja": "休館日"}
+  id: 2
+  note: ""
+  position: 2
+event_category_00003: 
+  name: book_talk
+  display_name_translations: {"en": "talk event", "ja": "おはなし会"}
+  id: 3
+  note: ""
+  position: 3
+event_category_00004: 
+  name: movie_theater
+  display_name_translations: {"en": "screening", "ja": "上映会"}
+  id: 4
+  note: ""
+  position: 4
+event_category_00005: 
+  name: talk_event
+  display_name_translations: {"en": "seminar", "ja": "講演会"}
+  id: 5
+  note: ""
+  position: 5
+
+# == Schema Information
+#
+# Table name: event_categories
+#
+#  id                        :bigint           not null, primary key
+#  name                      :string           not null
+#  display_name_translations :jsonb            not null
+#  note                      :text
+#  position                  :integer          default(1), not null
+#  created_at                :datetime         not null
+#  updated_at                :datetime         not null
+#
