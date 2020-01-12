@@ -1,31 +1,7 @@
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, #:registerable,
-         :recoverable, :rememberable, #:validatable,
-      :lockable, lock_strategy: :none, unlock_strategy: :none
-
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, #:registerable,
-         :recoverable, :rememberable, #:validatable,
-      :lockable, lock_strategy: :none, unlock_strategy: :none
-
   include EnjuCirculation::EnjuUser
   include EnjuMessage::EnjuUser
   include EnjuLibrary::EnjuUser
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, #:registerable,
-         :recoverable, :rememberable, #:validatable,
-      :lockable, lock_strategy: :none, unlock_strategy: :none
-
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, #:registerable,
-         :recoverable, :rememberable, #:validatable,
-      :lockable, lock_strategy: :none, unlock_strategy: :none
-
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, #:registerable,
