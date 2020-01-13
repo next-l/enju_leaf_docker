@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: 9d1ba7beeeb99f46675077ccd9eb249ac555fa68
+  revision: 7c786296d13f3075829ec270faeffec5fc267101
   specs:
     enju_leaf (3.0.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -80,7 +80,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_seed.git
-  revision: ad1434bd69e3e4e4f409a41ceb18b2745342adda
+  revision: 5e2783e1add59678b988f753df7faa074833a818
   specs:
     enju_seed (0.5.0.beta.1)
       acts_as_list (~> 1.0)
@@ -189,7 +189,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
-    crass (1.0.5)
+    crass (1.0.6)
     devise (4.7.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -215,7 +215,7 @@ GEM
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     highline (2.0.3)
-    i18n (1.8.1)
+    i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
     jbuilder (2.9.1)
