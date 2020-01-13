@@ -13,6 +13,7 @@ $ cp .env.template .env
 $ docker-compose up -d
 $ docker-compose run web yarn install
 $ docker-compose run web rails g enju_leaf:seed # マイグレーションファイル作成・初期データ投入
+$ docker-compose run web rake assets:precompile
 $ docker-compose down
 ```
 
