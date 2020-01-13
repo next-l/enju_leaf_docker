@@ -11,8 +11,8 @@ $ git clone https://github.com/next-l/enju_leaf_docker.git
 $ cd enju_leaf_docker
 $ cp .env.template .env
 $ docker-compose up -d
-$ docker-compose run web rails g enju_leaf:quick_install # マイグレーションファイル作成
-$ docker-compose run web rails g enju_leaf:seed # 初期データ投入
+$ docker-compose run web yarn install
+$ docker-compose run web rails g enju_leaf:seed # マイグレーションファイル作成・初期データ投入
 $ docker-compose down
 ```
 
