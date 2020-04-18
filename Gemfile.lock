@@ -13,7 +13,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_circulation.git
-  revision: 217d32677d4f8b2b8e1f37ece51a732591cb18c6
+  revision: a84b8440f0b786b7bf076e4e21af1c4166c46bf8
   specs:
     enju_circulation (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: 1ab09eda33bcdd891b85503ae51cf601f43006ef
+  revision: 3cb9a69cc1a8bb41ad02862af437d5555b04791f
   specs:
     enju_event (0.5.0.beta.1)
       enju_message (~> 0.5.0.beta.1)
@@ -36,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: 9fa25eb4b85569e7aaa77f5b07ab32f9618a1db1
+  revision: be8192762e4c194406676640f43356d23e34b453
   specs:
     enju_leaf (3.0.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: 0c76bb3ca590f20c04c75730d9043b4c84a869a0
+  revision: fb57a46b21fc434841443d9b0675b253cad7f133
   specs:
     enju_library (0.5.0.beta.1)
       enju_seed (~> 0.5.0.beta.1)
@@ -55,14 +55,14 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_manifestation_viewer.git
-  revision: d7921185898f0a23fb242cc68aa7d0e5467dcfd5
+  revision: 7482318251887effc744b6f33a337047b7424f6b
   specs:
     enju_manifestation_viewer (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
 
 GIT
   remote: https://github.com/next-l/enju_message.git
-  revision: baebf49d07164e9823220cc077b7ce488d01a128
+  revision: 70dac8f88124e5f2ee52713cf525b6257bfcc8f7
   specs:
     enju_message (0.5.0.beta.1)
       awesome_nested_set (~> 3.2)
@@ -71,7 +71,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_ndl.git
-  revision: 61ad3c1a2eb6d3401fff37f4001dfa0675e125fe
+  revision: 4f3c8626ed2216d433c24190a53adfd3b6bc4bc1
   specs:
     enju_ndl (0.5.0.beta.1)
       addressable
@@ -103,7 +103,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: ac0738837e10da62d0b46181ca80bea5412a28f4
+  revision: 1833deda73ccf7a08d411ec453725e39cbdcf818
   specs:
     enju_subject (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
