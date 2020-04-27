@@ -12,6 +12,7 @@ module EnjuLeafDocker
     config.i18n.enforce_available_locales = true
     config.active_job.queue_adapter = :resque
     config.i18n.default_locale = :ja
+    config.i18n.fallbacks = [I18n.default_locale]
     config.time_zone = 'Tokyo'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
