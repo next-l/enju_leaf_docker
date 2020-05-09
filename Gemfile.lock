@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 9fe037c0926c3cfd0dc57fb723281ad473d054e5
+  revision: 0b860de370d078320471eea56909945ddb4078d4
   specs:
     enju_biblio (0.5.0.beta.1)
       dynamic_form
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_inventory.git
-  revision: a29cad761b54485b0fe423f3efdd840f768c1d09
+  revision: fbdd1bba383d50324aabe1b3cdc05f9c08e5f1f7
   specs:
     enju_inventory (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: 65174abc9aaf573f10c963b5823401611a0c99b6
+  revision: 25533d94cd27c89e77aac45153bfcad067969f18
   specs:
     enju_library (0.5.0.beta.1)
       enju_seed (~> 0.5.0.beta.1)
@@ -72,7 +72,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_ndl.git
-  revision: e7f248585f6fd9c64c71e34dfd2ca0fe7ba3d656
+  revision: 903f76eb6a8ffcd222423c095c742af9dd59cb82
   specs:
     enju_ndl (0.5.0.beta.1)
       addressable
@@ -112,61 +112,61 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actioncable (6.0.2.2)
-      actionpack (= 6.0.2.2)
+    actioncable (6.0.3)
+      actionpack (= 6.0.3)
       nio4r (~> 2.0)
       websocket-driver (>= 0.6.1)
-    actionmailbox (6.0.2.2)
-      actionpack (= 6.0.2.2)
-      activejob (= 6.0.2.2)
-      activerecord (= 6.0.2.2)
-      activestorage (= 6.0.2.2)
-      activesupport (= 6.0.2.2)
+    actionmailbox (6.0.3)
+      actionpack (= 6.0.3)
+      activejob (= 6.0.3)
+      activerecord (= 6.0.3)
+      activestorage (= 6.0.3)
+      activesupport (= 6.0.3)
       mail (>= 2.7.1)
-    actionmailer (6.0.2.2)
-      actionpack (= 6.0.2.2)
-      actionview (= 6.0.2.2)
-      activejob (= 6.0.2.2)
+    actionmailer (6.0.3)
+      actionpack (= 6.0.3)
+      actionview (= 6.0.3)
+      activejob (= 6.0.3)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 2.0)
-    actionpack (6.0.2.2)
-      actionview (= 6.0.2.2)
-      activesupport (= 6.0.2.2)
+    actionpack (6.0.3)
+      actionview (= 6.0.3)
+      activesupport (= 6.0.3)
       rack (~> 2.0, >= 2.0.8)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actiontext (6.0.2.2)
-      actionpack (= 6.0.2.2)
-      activerecord (= 6.0.2.2)
-      activestorage (= 6.0.2.2)
-      activesupport (= 6.0.2.2)
+    actiontext (6.0.3)
+      actionpack (= 6.0.3)
+      activerecord (= 6.0.3)
+      activestorage (= 6.0.3)
+      activesupport (= 6.0.3)
       nokogiri (>= 1.8.5)
-    actionview (6.0.2.2)
-      activesupport (= 6.0.2.2)
+    actionview (6.0.3)
+      activesupport (= 6.0.3)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activejob (6.0.2.2)
-      activesupport (= 6.0.2.2)
+    activejob (6.0.3)
+      activesupport (= 6.0.3)
       globalid (>= 0.3.6)
-    activemodel (6.0.2.2)
-      activesupport (= 6.0.2.2)
-    activerecord (6.0.2.2)
-      activemodel (= 6.0.2.2)
-      activesupport (= 6.0.2.2)
-    activestorage (6.0.2.2)
-      actionpack (= 6.0.2.2)
-      activejob (= 6.0.2.2)
-      activerecord (= 6.0.2.2)
+    activemodel (6.0.3)
+      activesupport (= 6.0.3)
+    activerecord (6.0.3)
+      activemodel (= 6.0.3)
+      activesupport (= 6.0.3)
+    activestorage (6.0.3)
+      actionpack (= 6.0.3)
+      activejob (= 6.0.3)
+      activerecord (= 6.0.3)
       marcel (~> 0.3.1)
-    activesupport (6.0.2.2)
+    activesupport (6.0.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-      zeitwerk (~> 2.2)
+      zeitwerk (~> 2.2, >= 2.2.2)
     acts_as_list (1.0.1)
       activerecord (>= 4.2)
     addressable (2.7.0)
@@ -301,20 +301,20 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails (6.0.2.2)
-      actioncable (= 6.0.2.2)
-      actionmailbox (= 6.0.2.2)
-      actionmailer (= 6.0.2.2)
-      actionpack (= 6.0.2.2)
-      actiontext (= 6.0.2.2)
-      actionview (= 6.0.2.2)
-      activejob (= 6.0.2.2)
-      activemodel (= 6.0.2.2)
-      activerecord (= 6.0.2.2)
-      activestorage (= 6.0.2.2)
-      activesupport (= 6.0.2.2)
+    rails (6.0.3)
+      actioncable (= 6.0.3)
+      actionmailbox (= 6.0.3)
+      actionmailer (= 6.0.3)
+      actionpack (= 6.0.3)
+      actiontext (= 6.0.3)
+      actionview (= 6.0.3)
+      activejob (= 6.0.3)
+      activemodel (= 6.0.3)
+      activerecord (= 6.0.3)
+      activestorage (= 6.0.3)
+      activesupport (= 6.0.3)
       bundler (>= 1.3.0)
-      railties (= 6.0.2.2)
+      railties (= 6.0.3)
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
@@ -326,9 +326,9 @@ GEM
       railties (>= 6.0.0, < 7)
     rails_autolink (1.1.6)
       rails (> 3.1)
-    railties (6.0.2.2)
-      actionpack (= 6.0.2.2)
-      activesupport (= 6.0.2.2)
+    railties (6.0.3)
+      actionpack (= 6.0.3)
+      activesupport (= 6.0.3)
       method_source
       rake (>= 0.8.7)
       thor (>= 0.20.3, < 2.0)

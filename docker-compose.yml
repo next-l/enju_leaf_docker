@@ -74,7 +74,7 @@ services:
   solr:
     build: docker/solr
     volumes:
-      - solr_data:/opt/solr/server/solr/mycores
+      - solr_data:/var/solr/data
     entrypoint:
       - solr-precreate
       - enju_leaf_development
