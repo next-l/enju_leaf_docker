@@ -242,7 +242,7 @@ GEM
       activerecord
       kaminari-core (= 1.2.1)
     kaminari-core (1.2.1)
-    kramdown (2.2.1)
+    kramdown (2.3.0)
       rexml
     library_stdnums (1.6.0)
     link_header (0.0.8)
