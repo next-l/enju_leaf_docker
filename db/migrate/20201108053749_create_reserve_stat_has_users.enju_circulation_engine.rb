@@ -1,0 +1,12 @@
+# This migration comes from enju_circulation_engine (originally 20081220034117)
+class CreateReserveStatHasUsers < ActiveRecord::Migration[5.2]
+  def change
+    create_table :reserve_stat_has_users do |t|
+      t.references :user_reserve_stat, foreign_key: true, null: false
+      t.references :user, foreign_key: true, null: false
+      t.integer :reserves_count
+
+      t.timestamps
+    end
+  end
+end

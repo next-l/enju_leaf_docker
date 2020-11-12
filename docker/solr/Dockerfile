@@ -1,2 +1,2 @@
-FROM solr:8.5-slim
+FROM solr:8.7-slim
 COPY configsets /tmp/configsets
