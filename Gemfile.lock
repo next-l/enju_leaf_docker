@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 1ba40fe634d075809ebccfd40ec1046f56ce3715
+  revision: 9865c645a975bbc667b3a8a9bef3cf5cd667131d
   specs:
     enju_biblio (0.5.0.beta.1)
       dynamic_form
@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_circulation.git
-  revision: d451d31daa3555c1bc9f17c32a0fb192c8029f9e
+  revision: ff2ae96e0b7987f5a140025d390235d253da4bd7
   specs:
     enju_circulation (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: f5ff1e9b739925c43657aa21e32ba9cd87e680dd
+  revision: 5e65dbbb4ea682750ed95df902eb980a3cd38064
   specs:
     enju_event (0.5.0.beta.1)
       enju_message (~> 0.5.0.beta.1)
@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: d8f0c5d8ac2b330bcf89ed35ad67867c28ec2a68
+  revision: fc0a682edea8737365076a19c130ee662358b79d
   specs:
     enju_library (0.5.0.beta.1)
       enju_seed (~> 0.5.0.beta.1)
@@ -105,7 +105,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: 8ec4fc428913727e5747532135dba186b81bdcc6
+  revision: acbf3ed7e01b68b4a15e7219ef1c7f11a0edfce5
   specs:
     enju_subject (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -180,18 +180,18 @@ GEM
       activerecord (>= 4.0.0, < 7.0)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bootsnap (1.5.1)
+    bootsnap (1.7.1)
       msgpack (~> 1.0)
     browser (5.3.0)
     builder (3.2.4)
     byebug (11.1.3)
-    capybara (3.34.0)
+    capybara (3.35.3)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
-      regexp_parser (~> 1.5)
+      regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     charlock_holmes (0.7.7)
     childprocess (3.0.0)
@@ -233,12 +233,12 @@ GEM
       concurrent-ruby (~> 1.0)
     highline (2.0.3)
     htmlentities (4.3.4)
-    i18n (1.8.7)
+    i18n (1.8.8)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.1)
       mini_magick (>= 4.9.5, < 5)
       ruby-vips (>= 2.0.17, < 3)
-    jbuilder (2.11.0)
+    jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     jquery-ui-rails (4.2.1)
       railties (>= 3.2.16)
@@ -283,12 +283,12 @@ GEM
     mini_portile2 (2.5.0)
     minitest (5.14.3)
     mono_logger (1.1.0)
-    msgpack (1.3.3)
+    msgpack (1.4.2)
     multi_json (1.15.0)
     multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.4)
+    nio4r (2.5.5)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
@@ -304,13 +304,13 @@ GEM
       highline (>= 1.6, < 3)
       options (~> 2.3.0)
     public_suffix (4.0.6)
-    puma (5.1.1)
+    puma (5.2.1)
       nio4r (~> 2.0)
     pundit (2.1.0)
       activesupport (>= 3.0.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-mini-profiler (2.3.0)
+    rack-mini-profiler (2.3.1)
       rack (>= 1.2.0)
     rack-protection (2.1.0)
       rack
@@ -353,7 +353,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rdf (3.1.9)
+    rdf (3.1.10)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
     rdf-turtle (3.1.3)
@@ -362,9 +362,9 @@ GEM
     rdf-vocab (3.1.10)
       rdf (~> 3.1, >= 3.1.8)
     redis (4.2.5)
-    redis-namespace (1.8.0)
+    redis-namespace (1.8.1)
       redis (>= 3.0.4)
-    regexp_parser (1.8.2)
+    regexp_parser (2.0.3)
     request_store (1.5.0)
       rack (>= 1.4)
     responders (3.0.1)
