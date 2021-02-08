@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 9865c645a975bbc667b3a8a9bef3cf5cd667131d
+  revision: 44d961667ba68c67587aa10d0e49a01d84c655ca
   specs:
     enju_biblio (0.5.0.beta.1)
       dynamic_form
@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: fc0a682edea8737365076a19c130ee662358b79d
+  revision: 14edb45c49381d389d31361f65952a0cf131f814
   specs:
     enju_library (0.5.0.beta.1)
       enju_seed (~> 0.5.0.beta.1)
@@ -82,7 +82,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_seed.git
-  revision: a7412618a841c888bcbd6a8079fbaa8cc6112494
+  revision: fd6ded73e0b58baff5b4487d6d6c4597caa0c16f
   specs:
     enju_seed (0.5.0.beta.1)
       acts_as_list (~> 1.0)
@@ -105,7 +105,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: acbf3ed7e01b68b4a15e7219ef1c7f11a0edfce5
+  revision: 01e493eba7057c63cc8d88293d263427bb63438f
   specs:
     enju_subject (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -180,7 +180,7 @@ GEM
       activerecord (>= 4.0.0, < 7.0)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bootsnap (1.7.1)
+    bootsnap (1.7.2)
       msgpack (~> 1.0)
     browser (5.3.0)
     builder (3.2.4)
