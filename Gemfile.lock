@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/next-l/enju_biblio.git
-  revision: 44d961667ba68c67587aa10d0e49a01d84c655ca
+  revision: f4999a28bc4ecca27455ebf1980914ab6aad10c9
   specs:
     enju_biblio (0.5.0.beta.1)
       dynamic_form
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_event.git
-  revision: 5e65dbbb4ea682750ed95df902eb980a3cd38064
+  revision: 45c3091748a4462be87d3aea3d0364ddecd1b8d3
   specs:
     enju_event (0.5.0.beta.1)
       enju_message (~> 0.5.0.beta.1)
@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_leaf.git
-  revision: 0f3d2062506d354c4e70ae764e6280c502e6dfaa
+  revision: 5fd44fef9510ad4c6dd3c5b2eb59f03a24eba71e
   specs:
     enju_leaf (3.0.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_library.git
-  revision: 14edb45c49381d389d31361f65952a0cf131f814
+  revision: f5bc3bf2e75847cb0ad5026ec69ddaf112719572
   specs:
     enju_library (0.5.0.beta.1)
       enju_seed (~> 0.5.0.beta.1)
@@ -63,7 +63,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_message.git
-  revision: 436e5646e5705ae8d6a4b694ca8552c9bf02abe8
+  revision: d68c60c76a607c67841d493c2fd8bb893d38af05
   specs:
     enju_message (0.5.0.beta.1)
       awesome_nested_set (~> 3.2)
@@ -105,7 +105,7 @@ GIT
 
 GIT
   remote: https://github.com/next-l/enju_subject.git
-  revision: 01e493eba7057c63cc8d88293d263427bb63438f
+  revision: 584503e765d7e6b40686ab40ed62e56bb5bef834
   specs:
     enju_subject (0.5.0.beta.1)
       enju_biblio (~> 0.5.0.beta.1)
@@ -113,60 +113,60 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actioncable (6.1.1)
-      actionpack (= 6.1.1)
-      activesupport (= 6.1.1)
+    actioncable (6.1.3)
+      actionpack (= 6.1.3)
+      activesupport (= 6.1.3)
       nio4r (~> 2.0)
       websocket-driver (>= 0.6.1)
-    actionmailbox (6.1.1)
-      actionpack (= 6.1.1)
-      activejob (= 6.1.1)
-      activerecord (= 6.1.1)
-      activestorage (= 6.1.1)
-      activesupport (= 6.1.1)
+    actionmailbox (6.1.3)
+      actionpack (= 6.1.3)
+      activejob (= 6.1.3)
+      activerecord (= 6.1.3)
+      activestorage (= 6.1.3)
+      activesupport (= 6.1.3)
       mail (>= 2.7.1)
-    actionmailer (6.1.1)
-      actionpack (= 6.1.1)
-      actionview (= 6.1.1)
-      activejob (= 6.1.1)
-      activesupport (= 6.1.1)
+    actionmailer (6.1.3)
+      actionpack (= 6.1.3)
+      actionview (= 6.1.3)
+      activejob (= 6.1.3)
+      activesupport (= 6.1.3)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 2.0)
-    actionpack (6.1.1)
-      actionview (= 6.1.1)
-      activesupport (= 6.1.1)
+    actionpack (6.1.3)
+      actionview (= 6.1.3)
+      activesupport (= 6.1.3)
       rack (~> 2.0, >= 2.0.9)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actiontext (6.1.1)
-      actionpack (= 6.1.1)
-      activerecord (= 6.1.1)
-      activestorage (= 6.1.1)
-      activesupport (= 6.1.1)
+    actiontext (6.1.3)
+      actionpack (= 6.1.3)
+      activerecord (= 6.1.3)
+      activestorage (= 6.1.3)
+      activesupport (= 6.1.3)
       nokogiri (>= 1.8.5)
-    actionview (6.1.1)
-      activesupport (= 6.1.1)
+    actionview (6.1.3)
+      activesupport (= 6.1.3)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activejob (6.1.1)
-      activesupport (= 6.1.1)
+    activejob (6.1.3)
+      activesupport (= 6.1.3)
       globalid (>= 0.3.6)
-    activemodel (6.1.1)
-      activesupport (= 6.1.1)
-    activerecord (6.1.1)
-      activemodel (= 6.1.1)
-      activesupport (= 6.1.1)
-    activestorage (6.1.1)
-      actionpack (= 6.1.1)
-      activejob (= 6.1.1)
-      activerecord (= 6.1.1)
-      activesupport (= 6.1.1)
+    activemodel (6.1.3)
+      activesupport (= 6.1.3)
+    activerecord (6.1.3)
+      activemodel (= 6.1.3)
+      activesupport (= 6.1.3)
+    activestorage (6.1.3)
+      actionpack (= 6.1.3)
+      activejob (= 6.1.3)
+      activerecord (= 6.1.3)
+      activesupport (= 6.1.3)
       marcel (~> 0.3.1)
       mimemagic (~> 0.3.2)
-    activesupport (6.1.1)
+    activesupport (6.1.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -176,13 +176,13 @@ GEM
       activerecord (>= 4.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    awesome_nested_set (3.3.1)
+    awesome_nested_set (3.4.0)
       activerecord (>= 4.0.0, < 7.0)
     bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.7.2)
       msgpack (~> 1.0)
-    browser (5.3.0)
+    browser (5.3.1)
     builder (3.2.4)
     byebug (11.1.3)
     capybara (3.35.3)
@@ -226,14 +226,14 @@ GEM
       rack (>= 1.1.1)
     friendly_id (5.4.2)
       activerecord (>= 4.0.0)
-    geocoder (1.6.4)
+    geocoder (1.6.5)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     highline (2.0.3)
     htmlentities (4.3.4)
-    i18n (1.8.8)
+    i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.1)
       mini_magick (>= 4.9.5, < 5)
@@ -318,20 +318,20 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails (6.1.1)
-      actioncable (= 6.1.1)
-      actionmailbox (= 6.1.1)
-      actionmailer (= 6.1.1)
-      actionpack (= 6.1.1)
-      actiontext (= 6.1.1)
-      actionview (= 6.1.1)
-      activejob (= 6.1.1)
-      activemodel (= 6.1.1)
-      activerecord (= 6.1.1)
-      activestorage (= 6.1.1)
-      activesupport (= 6.1.1)
+    rails (6.1.3)
+      actioncable (= 6.1.3)
+      actionmailbox (= 6.1.3)
+      actionmailer (= 6.1.3)
+      actionpack (= 6.1.3)
+      actiontext (= 6.1.3)
+      actionview (= 6.1.3)
+      activejob (= 6.1.3)
+      activemodel (= 6.1.3)
+      activerecord (= 6.1.3)
+      activestorage (= 6.1.3)
+      activesupport (= 6.1.3)
       bundler (>= 1.15.0)
-      railties (= 6.1.1)
+      railties (= 6.1.3)
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
@@ -343,9 +343,9 @@ GEM
       railties (>= 6.0.0, < 7)
     rails_autolink (1.1.6)
       rails (> 3.1)
-    railties (6.1.1)
-      actionpack (= 6.1.1)
-      activesupport (= 6.1.1)
+    railties (6.1.3)
+      actionpack (= 6.1.3)
+      activesupport (= 6.1.3)
       method_source
       rake (>= 0.8.7)
       thor (~> 1.0)
@@ -353,18 +353,18 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rdf (3.1.10)
+    rdf (3.1.12)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
     rdf-turtle (3.1.3)
       ebnf (~> 2.1)
       rdf (~> 3.1, >= 3.1.8)
-    rdf-vocab (3.1.10)
-      rdf (~> 3.1, >= 3.1.8)
+    rdf-vocab (3.1.11)
+      rdf (~> 3.1, >= 3.1.12)
     redis (4.2.5)
     redis-namespace (1.8.1)
       redis (>= 3.0.4)
-    regexp_parser (2.0.3)
+    regexp_parser (2.1.0)
     request_store (1.5.0)
       rack (>= 1.4)
     responders (3.0.1)
@@ -401,9 +401,9 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_range (2.3.1)
-    simple_form (5.0.3)
-      actionpack (>= 5.0)
-      activemodel (>= 5.0)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
