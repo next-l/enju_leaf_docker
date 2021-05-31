@@ -1,0 +1,33 @@
+[submodule "engines/enju_leaf"]
+	path = engines/enju_leaf
+	url = https://github.com/next-l/enju_leaf.git
+[submodule "engines/enju_library"]
+	path = engines/enju_library
+	url = https://github.com/next-l/enju_library.git
+[submodule "engines/enju_biblio"]
+	path = engines/enju_biblio
+	url = https://github.com/next-l/enju_biblio.git
+[submodule "engines/enju_subject"]
+	path = engines/enju_subject
+	url = https://github.com/next-l/enju_subject.git
+[submodule "engines/enju_circulation"]
+	path = engines/enju_circulation
+	url = https://github.com/next-l/enju_circulation.git
+[submodule "engines/enju_message"]
+	path = engines/enju_message
+	url = https://github.com/next-l/enju_message.git
+[submodule "engines/enju_seed"]
+	path = engines/enju_seed
+	url = https://github.com/next-l/enju_seed.git
+[submodule "engines/enju_ndl"]
+	path = engines/enju_ndl
+	url = https://github.com/next-l/enju_ndl.git
+[submodule "engines/enju_manifestation_viewer"]
+	path = engines/enju_manifestation_viewer
+	url = https://github.com/next-l/enju_manifestation_viewer.git
+[submodule "engines/enju_event"]
+	path = engines/enju_event
+	url = https://github.com/next-l/enju_event.git
+[submodule "engines/enju_inventory"]
+	path = engines/enju_inventory
+	url = https://github.com/next-l/enju_inventory.git

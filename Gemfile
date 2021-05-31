@@ -55,17 +55,17 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'enju_seed', github: 'next-l/enju_seed'
-gem 'enju_leaf', github: 'next-l/enju_leaf'
-gem 'enju_biblio', github: 'next-l/enju_biblio'
-gem 'enju_library', github: 'next-l/enju_library'
-gem 'enju_manifestation_viewer', github: 'next-l/enju_manifestation_viewer'
-gem 'enju_ndl', github: 'next-l/enju_ndl'
-gem 'enju_circulation', github: 'next-l/enju_circulation'
-gem 'enju_subject', github: 'next-l/enju_subject'
-gem 'enju_message', github: 'next-l/enju_message'
-gem 'enju_event', github: 'next-l/enju_event'
-gem 'enju_inventory', github: 'next-l/enju_inventory'
+gem 'enju_seed', path: 'engines/enju_seed'
+gem 'enju_leaf', path: 'engines/enju_leaf'
+gem 'enju_biblio', path: 'engines/enju_biblio'
+gem 'enju_library', path: 'engines/enju_library'
+gem 'enju_manifestation_viewer', path: 'engines/enju_manifestation_viewer'
+gem 'enju_ndl', path: 'engines/enju_ndl'
+gem 'enju_circulation', path: 'engines/enju_circulation'
+gem 'enju_subject', path: 'engines/enju_subject'
+gem 'enju_message', path: 'engines/enju_message'
+gem 'enju_event', path: 'engines/enju_event'
+gem 'enju_inventory', path: 'engines/enju_inventory'
 gem 'charlock_holmes', platform: :mri
 gem 'sunspot_solr', '~> 2.5'
 gem 'progress_bar'
