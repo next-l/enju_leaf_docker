@@ -1,4 +1,4 @@
-version: '3.2'
+version: '3.8'
 services:
   db:
     build: docker/db
@@ -75,10 +75,8 @@ services:
     build: docker/solr
     volumes:
       - solr_data:/var/solr/data
-    entrypoint:
-      - solr-precreate
-      - enju_leaf_development
-      - /tmp/configsets/sunspot/conf
+      - ./solr:/mnt/solr
+    command: bash -c "precreate-core enju_leaf_${RAILS_ENV} /mnt/solr/configsets/sunspot/conf/; exec solr -f"
     healthcheck:
       test: ["CMD-SHELL", "wget -O /dev/null http://localhost:8983/solr/"]
       interval: 30s
